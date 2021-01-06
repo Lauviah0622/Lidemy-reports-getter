@@ -18,24 +18,24 @@
 
 可以直接改 `.env.template`
 
-### `DIR_NAME`
+#### `DIR_NAME`
 
 預設是 `/reports`，可以自己更改資料夾名稱
 
-### `JWT_TOKEN`
+#### `JWT_TOKEN`
 依照以下步驟取得
 1. 先進入導師計畫學習系統
 2. 打開 `devtool` > `newwork`，然後建議 clear 一下
 3. 切換到 `個人檔案` 的頁面
 4. 找到 `https://learning-api.lidemy.com/v1/users/[userID]/reports?page=1` 這個 reqeust，到 `Headers` 這個分頁尋找 `Authentication` 這個 header，然後**複製 `bearer ` 以後的內容**
 
-### `COOKIE`
+#### `COOKIE`
 延續上面的步驟，切換到 `Cookies` 這個分頁，複製 `__cfduid` 的 value 即可
 
-### `USER_ID`
+#### `USER_ID`
 從上面 request 的 url 找自己的 ID 即可
 
-### `ADD_YAML_HEADER`
+#### `ADD_YAML_HEADER`
 如果你要在前面加上 YAML 的 header 作為文章資訊，可以設定 `ADD_YAML_HEADER=1`。
 
 YAML header 可以讓 hexo 之類的 blog framework 來幫你生成文章資訊。
